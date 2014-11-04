@@ -1,0 +1,64 @@
+{
+  "author": {
+    "email": "webmaster@christiangrete.com",
+    "name": "Christian Grete",
+    "url": "https://christiangrete.com"
+  },
+  "bugs": {
+    "email": "webmaster@christiangrete.com",
+    "url": "https://github.com/ChristianGrete/grunt-register-tasks/issues"
+  },
+  "contributors": [
+    {
+      "email": "webmaster@christiangrete.com",
+      "name": "Christian Grete",
+      "url": "https://christiangrete.com"
+    }
+  ],
+  "description": "Registers multiple grunt tasks at once using an object",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "npm": "^2.1.6"
+  },
+  "engines": {
+    "node": ">=0.10.33",
+    "npm": ">=2.1.6"
+  },
+  "files": [
+    "grunt-register-tasks.js"
+  ],
+  "homepage": "https://github.com/ChristianGrete/grunt-register-tasks",
+  "keywords": [
+    "grunt",
+    "register",
+    "multiple",
+    "tasks",
+    "object",
+    "map",
+    "task",
+    "registerTask",
+    "registerTasks",
+    "registration",
+    "register-tasks",
+    "register-grunt-tasks"
+  ],
+  "license": "MIT",
+  "main": "grunt-register-tasks",
+  "maintainers": [
+    {
+      "email": "webmaster@christiangrete.com",
+      "name": "Christian Grete",
+      "url": "https://christiangrete.com"
+    }
+  ],
+  "name": "grunt-register-tasks",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ChristianGrete/grunt-register-tasks.git"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "version": "1.0.0"
+}
