@@ -57,8 +57,5 @@
     "type": "git",
     "url": "git://github.com/ChristianGrete/grunt-register-tasks.git"
   },
-  "scripts": {
-    "test": "grunt"
-  },
   "version": "1.0.0"
 }
