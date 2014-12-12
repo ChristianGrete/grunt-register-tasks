@@ -26,7 +26,7 @@
     "npm": ">=2.1.6"
   },
   "files": [
-    "grunt-register-tasks.js"
+    "dist/grunt-register-tasks.js"
   ],
   "homepage": "https://github.com/ChristianGrete/grunt-register-tasks",
   "keywords": [
@@ -44,7 +44,7 @@
     "register-grunt-tasks"
   ],
   "license": "MIT",
-  "main": "grunt-register-tasks",
+  "main": "dist/grunt-register-tasks",
   "maintainers": [
     {
       "email": "webmaster@christiangrete.com",
