@@ -1,14 +1,8 @@
-/**
- * @author Christian Grete <webmaster@christiangrete.com>
- * @file Exports the “grunt-register-tasks” module.
- * @version 1.0.0
- */
-
 'use strict';
 
 module.exports = function registerTasks ( grunt, tasks ) {
 
-    var // const
+    var
       ERROR_MESSAGE__INVALID_ARGUMENT
         = 'Argument "%" is null or not an object',
       ERROR_MESSAGE__INVALID_ARGUMENTS_LENGTH
