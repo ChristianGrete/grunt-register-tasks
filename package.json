@@ -30,6 +30,7 @@
   ],
   "homepage": "https://github.com/ChristianGrete/grunt-register-tasks",
   "keywords": [
+    "gruntplugin",
     "grunt",
     "register",
     "multiple",
