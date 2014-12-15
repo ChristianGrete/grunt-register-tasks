@@ -1,7 +1,7 @@
 /**
  * @author Christian Grete <webmaster@christiangrete.com>
  * @file Exports the “grunt-register-tasks” module.
- * @version 1.0.0
+ * @version 1.0.1-dev
  */
 
 'use strict';
