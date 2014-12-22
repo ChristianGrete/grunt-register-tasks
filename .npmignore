@@ -3,3 +3,8 @@
 .jshintrc
 .tm_properties
 Gruntfile.js
+build
+config
+docs
+libs
+src
