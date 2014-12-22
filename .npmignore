@@ -1,4 +1,5 @@
 .editorconfig
 .gitignore
+.jshintrc
 .tm_properties
 Gruntfile.js
