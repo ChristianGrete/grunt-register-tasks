@@ -1,0 +1,6 @@
+{
+  "JS": "*.js",
+  "JS__RECURSIVE": "**/*.js",
+  "JSON": "*.json",
+  "JSON__RECURSIVE": "**/*.json"
+}
