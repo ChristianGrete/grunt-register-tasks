@@ -1,1 +1,7 @@
-projectDirectory = '$CWD'
+include = "{$include,.bowerrc,.csscomb.json,.editorconfig,.git,.gitignore,.jshintrc,.npmignore}"
+invisiblesMap = " ·\n¶\t›"
+projectDirectory = "$CWD"
+softWrap = true
+softTabs = true
+tabSize = 2
+wrapColumn = 96
