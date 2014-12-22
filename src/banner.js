@@ -18,7 +18,7 @@
      pkg.homepage
        + '|'
        + pkg.name
-   %>} grunt plugin.
+   %>} Grunt plugin.
  * @ignore
  * @license <%= pkg.license %>
  * @see {@link <%= pkg.homepage %>}
