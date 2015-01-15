@@ -22,6 +22,18 @@ module.exports = function gruntWrapper ( $grunt ) {
       'clean': {
           'build': '<%= grunt.option("release") ? cfg.PATH__DIST : cfg.PATH__BUILD %>'
         },
+      'connect': {
+          'docs': {
+              'options': {
+                  'base': '<%= cfg.PATH__DOCS %>',
+                  'hostname': 'localhost',
+                  'livereload': true,
+                  'open': true,
+                  'port': 8080,
+                  'useAvailablePort': true
+                }
+            }
+        },
       'copy': {
           'src': {
               'cwd': '<%= cfg.PATH__SRC %>',
@@ -35,7 +47,7 @@ module.exports = function gruntWrapper ( $grunt ) {
         },
       'jsdoc': {
           'src': {
-              'dest': '<%= cfg.PATH__DOCS %>',
+              'dest': '<%= connect.docs.options.base %>',
               'src': '<%= cfg.PATH__SRC + "/" + cfg.GLOB__JS__RECURSIVE %>'
             }
         },
@@ -75,14 +87,19 @@ module.exports = function gruntWrapper ( $grunt ) {
               'beautify': true,
               'compress': false,
               'footer': '<%= meta.footer %>',
-              'mangle': false,
-              'preserveComments': 'some'
+              'mangle': false
             }
         },
       'watch': {
+          'options': {
+              'livereload': true
+            },
           'src.js': {
               'files': '<%= jshint.src %>',
-              'tasks': 'jshint:src'
+              'tasks': [
+                  'jshint:src',
+                  'jsdoc:src'
+                ]
             }
         }
     });
@@ -122,6 +139,16 @@ module.exports = function gruntWrapper ( $grunt ) {
         'clean:build',
         'copy:src',
         'uglify:build'
+      ]
+    );
+
+    _$grunt__registerTask(
+      'serve',
+      [
+        'build',
+        'jsdoc:src',
+        'connect:docs',
+        'watch'
       ]
     );
 
