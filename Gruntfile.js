@@ -84,7 +84,10 @@ module.exports = function gruntWrapper ( $grunt ) {
             },
           'options': {
               'banner': '<%= meta.banner %>',
-              'beautify': true,
+              'beautify': {
+                  'beautify': true,
+                  'indent_level': 2
+                },
               'compress': false,
               'footer': '<%= meta.footer %>',
               'mangle': false
